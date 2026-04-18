@@ -1,12 +1,9 @@
 import streamlit as st
 from langchain_groq import ChatGroq
-from langgraph.graph import StateGraph, END
 from langgraph.checkpoint.memory import MemorySaver
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from langchain_core.tools import tool
 from langgraph.prebuilt import create_react_agent
-from typing import TypedDict, Annotated, List
-import operator
 import json
 from dotenv import load_dotenv  # ✅ NEW
 import os                        # ✅ NEW
